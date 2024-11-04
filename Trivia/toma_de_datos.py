@@ -2,7 +2,7 @@ import pandas as pd
 from typing import Dict, List
 
 # Se lee el archivo CSV
-data = pd.read_csv('Datos/JEOPARDY_CSV.csv', encoding='ISO-8859-1')
+data = pd.read_csv('Datos/reduced_question_set.csv', encoding='ISO-8859-1')
 
 # Se toman las columnas de pregunta y respuesta
 data_question = data[['Question', 'Answer']]
