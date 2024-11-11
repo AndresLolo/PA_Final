@@ -64,7 +64,7 @@ def flujo_preguntas(preguntas: List[Dict[str, str]], resultados: int = 0, numero
         print(f"{i + 1}. {item}")
     
     
-    respuesta_usuario = input(f'¿Cuál es la respuesta correcta a la pregunta {numero_pregunta}? ')
+    respuesta_usuario = 1
     respuestas_usuario = set(map(str.lower, respuesta_usuario.split()))
 
     
