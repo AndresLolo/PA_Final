@@ -65,14 +65,13 @@ def flujo_preguntas(preguntas: List[Dict[str, str]], resultados: int = 0, numero
     
     
     respuesta_usuario = 1
-    respuestas_usuario = set(map(str.lower, respuesta_usuario.split()))
 
     
     respuesta_correcta_index = opciones.index(respuesta_correcta) + 1
     respuestas_correctas = {str(respuesta_correcta_index)}
 
     
-    respuestas_correctas_usuario = list(filter(lambda respuesta: respuesta in respuestas_correctas, respuestas_usuario))
+    respuestas_correctas_usuario = list(filter(lambda respuesta: respuesta in respuestas_correctas, respuesta_usuario))
     
     if respuestas_correctas_usuario:
         resultados += 1
