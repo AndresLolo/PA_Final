@@ -64,7 +64,8 @@ def flujo_preguntas(preguntas: List[Dict[str, str]], resultados: int = 0, numero
         print(f"{i + 1}. {item}")
     
     
-    respuesta_usuario = 1
+    respuesta_usuario = '1'
+    
 
     
     respuesta_correcta_index = opciones.index(respuesta_correcta) + 1
